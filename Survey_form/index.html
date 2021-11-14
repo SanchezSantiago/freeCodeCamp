@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Import CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<!--Import Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+	<title>Survey form</title>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<div id="logo-container"><img src="images/logo.png" id="logo"></div>
+		<h1 id="title" class="text-center">Gamer's Armory Survey Form</h1>
+		<p id="description" class="description text-center">Thank you for taking the time to help us improve the platform.</p>
+	</header>
+
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+					<input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+			</div>
+			<div class="form-group">
+				<label id="age-label" for="age">Age</label>
+					<input type="number" min=10 max= 99 name="age" id="number" class="form-control" placeholder="Enter your age">
+			</div>
+			<div class="form-group">
+				<p>Choose which one defines you the most</p>
+				<select id="dropdown" name="role" class="form-control" required>
+					<option disabled selected value>Select current role</option>
+					<option value="gamer">Gamer</option>
+					<option value="casual">Casual</option>
+					<option value="streamer">Streamer</option>
+					<option value="preferNo">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Would you recommend Gamer's Armory to a friend?</p>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="definitely">Definitely</label>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="maybe">Maybe</label>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="not-sure">Not sure</label>
+			</div>
+			<div class="form-group">
+				<p>What are your favorite video games?</p>
+				<label><input type="checkbox" name="FavGameGender" value="terror" class="input-checkbox">Terror</label>
+				<label><input type="checkbox" name="FavGameGender" value="fps" class="input-checkbox">FPS</label>
+				<label><input type="checkbox" name="FavGameGender" value="action" class="input-checkbox">Action</label>
+				<label><input type="checkbox" name="FavGameGender" value="strategy" class="input-checkbox">Strategy</label>
+				<label><input type="checkbox" name="FavGameGender" value="hack-n-slash" class="input-checkbox">Hack and Slash</label>
+				<label><input type="checkbox" name="FavGameGender" value="simulator" class="input-checkbox">Simulator</label>
+				<label><input type="checkbox" name="FavGameGender" value="sports" class="input-checkbox">Sports</label>
+				<label><input type="checkbox" name="FavGameGender" value="adventure" class="input-checkbox">Adventure</label>
+				<label><input type="checkbox" name="FavGameGender" value="racing" class="input-checkbox">Racing</label>
+				<label><input type="checkbox" name="FavGameGender" value="rpg" class="input-checkbox">RPG</label>
+				<label><input type="checkbox" name="FavGameGender" value="mmo" class="input-checkbox">MMO</label>
+
+
+			</div>
+			<div class="form-group">
+				<p>Any comments or suggestions?</p>
+				<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+#main{
+	background-color: rgb(39, 40, 40);
+	color: rgb(209, 203, 193);
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#title{
+	margin: 0;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+#img-div{
+	background-color: rgb(39, 44, 44);
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+#image{
+  display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+
+}
+#img-caption{
+	font-size: 15px;
+}
+
+#tribute-info{
+	margin: 10px 10px 0 10px;
+	display: block;
+}
+
+a{
+	color: rgb(209, 203, 193);
+	font-weight: bold;
+}
+
+ul{
+	max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+li{
+	margin: 10px;
+}
+
+blockquote{
+	font-style: italic;
+	margin: 50px auto 0 auto;
+}
+
+cite{
+	font-style: italic;
+	text-align: left;
+}
+footer a{
+  color: blue;
+}
