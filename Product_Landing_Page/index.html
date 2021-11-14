@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Import CSS-->
+    <!-- Import CSS -->
     <link rel="stylesheet" type="text/CSS" href="style.css">
 
-    <!--Import-Google Fonts-->
+    <!-- Import-Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Import Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 
     <title>Ready? Coffee!</title>
 
@@ -31,13 +35,102 @@
     </header>
     
     <main id="main">
+        <!-- FORM-SECTION -->
+
         <section id="form-section">
             <h2>Receive news and updates about our coffee!</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input type="email" id="email" placeholder="Enter your email!" required>
+                <input type="email" id="email" placeholder="Enter your email!" name="email" required>
                 <input type="submit" id="submit" value="Sure!" class="btn">
             </form>
         </section>
+
+        <!-- ABOUT-US -->
+
+        <section id="about-us">
+            <h2 class="subtitle">About us</h2>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-mug-hot fa-4x"></i>
+                </div>
+                <div class="desc">
+                    <h2>What's "Ready? Coffee!"?</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam in officiis laudantium adipisci dolor incidunt exercitationem rem? Doloribus, dolore? Optio voluptatem rerum enim suscipit ullam voluptates blanditiis odio ipsa assumenda.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-laptop fa-4x"></i>
+                </div>
+                <div class="desc">
+                    <h2>Computers and hot coffee? Awesome!</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam in officiis laudantium adipisci dolor incidunt exercitationem rem? Doloribus, dolore? Optio voluptatem rerum enim suscipit ullam voluptates blanditiis odio ipsa assumenda.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-wifi fa-4x"></i>
+                </div>
+                <div class="desc">
+                    <h2>There's wifi?</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam in officiis laudantium adipisci dolor incidunt exercitationem rem? Doloribus, dolore? Optio voluptatem rerum enim suscipit ullam voluptates blanditiis odio ipsa assumenda.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- HOW-WE-SERVE-IT -->
+
+        <section id="how-we-serve-it">
+            <h2 class="subtitle">How we serve it?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gvPetTPFsZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- FEATURED-COFFEE -->
+
+        <section id="featured-coffee">
+            <h2 class="subtitle">Featured coffee</h2>
+            <div id="featured-coffee-container">
+                <div class="coffee">
+                    <p class="coffee-name">Coffee with milk</p>
+                    <img src="Images/coffee-with-milk.jpg" class="coffee-img">
+                    <p class="coffee-price">2 USD</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Nomine</li>
+                    </ul>
+                </div>
+        
+
+            <div class="coffee">
+                    <p class="coffee-name">American Coffee</p>
+                    <img src="Images/american-coffee.jpg" class="coffee-img">
+                    <p class="coffee-price">3 USD</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Nomine</li>
+                    </ul>
+                </div>
+           
+
+                <div class="coffee">
+                    <p class="coffee-name">Coffee cut</p>
+                    <img src="Images/coffee-cut.jpg" class="coffee-img">
+                    <p class="coffee-price">1 USD</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Nomine</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
     </main>
 </body>
 </html>
